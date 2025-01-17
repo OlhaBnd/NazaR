@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-візитка Samsung</title>
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #343a40;
+        }
+
+        /* Шапка */
+        header {
+            background: #007bff;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 120px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Головний заголовок */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        /* Головний контент */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .text-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .text-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .text-section h2 {
+            font-size: 24px;
+            color: #495057;
+        }
+
+        /* Галерея телефонів */
+        .phone-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .phone-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .phone-item:hover {
+            transform: scale(1.05);
+            background-color: #f8f9fa;
+        }
+
+        .phone-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Футер */
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Анімація на псевдокласах */
+        a, button {
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        a:hover, button:hover {
+            transform: translateY(-3px);
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="Логотип Samsung">
+    <nav>
+        <a href="#">Продукція</a>
+        <a href="#">Тех. Підтримка</a>
+        <a href="#">Контакти</a>
+    </nav>
+</header>
+
+<h1>Ласкаво просимо до Samsung</h1>
+
+<main>
+    <div class="text-section">
+        <h2>Про компанію</h2>
+        <p>Samsung Group («Самсунг Груп») — південнокорейська група компаній, заснована у 1938 році. Відома своїми інноваційними рішеннями у світі технологій.</p>
+    </div>
+    <div class="text-section">
+        <h2>Головний офіс</h2>
+        <p>Розташований у серці Сеула, забезпечує глобальне керування та інновації.</p>
+    </div>
+    <div class="text-section">
+        <h2>Назва компанії</h2>
+        <p>Назва «Самсунг» перекладається як «три зірки», символізуючи надійність, якість та силу бренду.</p>
+    </div>
+
+    <h2 style="text-align: center; color: #495057; margin: 30px 0;">Популярні смартфони</h2>
+    <div class="phone-gallery">
+        <div class="phone-item">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbE0F4evgHZqbAuW-qPBZOCp2j9Bujk1CXY3nQthzZCQNqrunAh7hBkT9tSgaCVzVoZ4xWMr83s0LgwvfyPWdyvm0lS3J6TA9WalbiVq8rqkl0mPpeNUrPwnaOtXrxsIajhaNsJy-19A&usqp=CAc" alt="Samsung Galaxy A05">
+            <p>Samsung Galaxy A05 4/64Gb Silver</p>
+            <button>Детальніше</button>
+        </div>
+        <div class="phone-item">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/417097584.jpg" alt="Samsung Galaxy A55">
+            <p>Мобільний телефон Samsung Galaxy A55 5G 8/128GB Navy</p>
+            <button>Детальніше</button>
+        </div>
+        <div class="phone-item">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSNauhBUnSOj0cdx9eI2qyeI1_42rqfKwbo_tvXOvYut_oRc96sVqDqxlOG9NZh1egFdHMsbFK_sQ0HYZwap6waTS_8-7_oA83FCNLzYcWeWdQVj9inHJJt7g&usqp=CAE" alt="Samsung Galaxy S24 Ultra">
+            <p>Samsung Galaxy S24 Ultra 12/256Gb Titanium Black</p>
+            <button>Детальніше</button>
+        </div>
+        <div class="phone-item">
+            <img src="https://i.allo.ua/media/catalog/product/cache/3/image/524x494/602f0fa2c1f0d1ba5e241f914e856ff9/s/m/sm-f956_zfold6_openback_silver_shadow_240423_result_1_1.webp" alt="Samsung Galaxy Fold6">
+            <p>Samsung Galaxy Fold6 5G 12/1TB SILVER SHADOW</p>
+            <button>Детальніше</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Зв'язатися з нами: 0 800 502 000</p>
+    <p>© 2025 Samsung Україна</p>
+</footer>
+</body>
+</html>
